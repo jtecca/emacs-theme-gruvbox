@@ -80,6 +80,7 @@
   (gruvbox-light2          "#d5c4a1" "#bcbcbc")
   (gruvbox-light3          "#bdae93" "#a8a8a8")
   (gruvbox-light4          "#a89984" "#949494")
+  (gruvbox-seagreen        "#98fb98" "#98fb98")
 
   (gruvbox-bright_red      "#fb4933" "#d75f5f")
   (gruvbox-bright_green    "#b8bb26" "#afaf00")
@@ -109,6 +110,8 @@
   (gruvbox-dark_blue       "#2B3C44" "#000087")
   (gruvbox-dark_aqua       "#36473A" "#005f5f")
 
+  (gruvbox-midnight_blue   "#000055" "#191970")
+
   (gruvbox-delimiter-one   "#458588" "#008787")
   (gruvbox-delimiter-two   "#b16286" "#d75f87")
   (gruvbox-delimiter-three "#8ec07c" "#87af87")
@@ -130,17 +133,17 @@
 
  ;; UI
  ((default                                   (:background gruvbox-bg :foreground gruvbox-light0))
-  (cursor                                    (:background gruvbox-light0))
+  (cursor                                    (:background gruvbox-seagreen))
   (mode-line                                 (:background gruvbox-dark2 :foreground gruvbox-light2 :box nil))
   (mode-line-inactive                        (:background gruvbox-dark1 :foreground gruvbox-light4 :box nil))
   (fringe                                    (:background gruvbox-bg))
   (linum                                     (:background gruvbox-bg :foreground gruvbox-dark4))
   (hl-line                                   (:background gruvbox-dark1))
-  (region                                    (:background gruvbox-dark2)) ;;selection
+  (region                                    (:background gruvbox-midnight_blue)) ;;selection
   (secondary-selection                       (:background gruvbox-dark1))
   (minibuffer-prompt                         (:background gruvbox-bg :foreground gruvbox-neutral_green :bold t))
   (vertical-border                           (:foreground gruvbox-dark2))
-  (link                                      (:foreground gruvbox-faded_blue :underline t))
+  (link                                      (:foreground gruvbox-neutral_blue :underline t))
   (shadow                                    (:foreground gruvbox-dark4))
 
   ;; Built-in syntax
