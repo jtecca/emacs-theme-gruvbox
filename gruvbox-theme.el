@@ -111,6 +111,7 @@
   (gruvbox-dark_aqua       "#36473A" "#005f5f")
 
   (gruvbox-cursor          "#98fb98" "#98fb98")
+  (gruvbox-highlight       "#0000cc" "#0000cc")
 
   (gruvbox-delimiter-one   "#458588" "#008787")
   (gruvbox-delimiter-two   "#b16286" "#d75f87")
@@ -139,7 +140,7 @@
   (fringe                                    (:background gruvbox-dark_fringe))
   (linum                                     (:background gruvbox-bg :foreground gruvbox-dark4))
   (hl-line                                   (:background gruvbox-dark1))
-  (region                                    (:background "#0000cc")) ;;selection
+  (region                                    (:background gruvbox-highlight)) ;;selection
   (secondary-selection                       (:background gruvbox-dark1))
   (minibuffer-prompt                         (:background gruvbox-bg :foreground gruvbox-neutral_green :bold t))
   (vertical-border                           (:foreground gruvbox-dark2))
