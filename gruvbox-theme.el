@@ -64,6 +64,7 @@
    ((class color) (min-colors #xFF)))           ; col 2 Xterm/256
 
   (gruvbox-dark0_hard      "#1d2021" "#1c1c1c")
+  (gruvbox-dark_fringe     "#1d2222" "#242424")
   (gruvbox-dark0           "#282828" "#262626")
   (gruvbox-dark0_soft      "#32302f" "#303030")
   (gruvbox-dark1           "#3c3836" "#3a3a3a")
@@ -80,7 +81,6 @@
   (gruvbox-light2          "#d5c4a1" "#bcbcbc")
   (gruvbox-light3          "#bdae93" "#a8a8a8")
   (gruvbox-light4          "#a89984" "#949494")
-  (gruvbox-seagreen        "#98fb98" "#98fb98")
 
   (gruvbox-bright_red      "#fb4933" "#d75f5f")
   (gruvbox-bright_green    "#b8bb26" "#afaf00")
@@ -110,7 +110,7 @@
   (gruvbox-dark_blue       "#2B3C44" "#000087")
   (gruvbox-dark_aqua       "#36473A" "#005f5f")
 
-  (gruvbox-midnight_blue   "#000055" "#191970")
+  (gruvbox-cursor          "#98fb98" "#98fb98")
 
   (gruvbox-delimiter-one   "#458588" "#008787")
   (gruvbox-delimiter-two   "#b16286" "#d75f87")
@@ -133,17 +133,17 @@
 
  ;; UI
  ((default                                   (:background gruvbox-bg :foreground gruvbox-light0))
-  (cursor                                    (:background gruvbox-seagreen))
+  (cursor                                    (:background gruvbox-cursor))
   (mode-line                                 (:background gruvbox-dark2 :foreground gruvbox-light2 :box nil))
   (mode-line-inactive                        (:background gruvbox-dark1 :foreground gruvbox-light4 :box nil))
-  (fringe                                    (:background gruvbox-bg))
+  (fringe                                    (:background gruvbox-dark_fringe))
   (linum                                     (:background gruvbox-bg :foreground gruvbox-dark4))
   (hl-line                                   (:background gruvbox-dark1))
-  (region                                    (:background gruvbox-midnight_blue)) ;;selection
+  (region                                    (:background "#0000cc")) ;;selection
   (secondary-selection                       (:background gruvbox-dark1))
   (minibuffer-prompt                         (:background gruvbox-bg :foreground gruvbox-neutral_green :bold t))
   (vertical-border                           (:foreground gruvbox-dark2))
-  (link                                      (:foreground gruvbox-neutral_blue :underline t))
+  (link                                      (:foreground gruvbox-faded_purple :underline t))
   (shadow                                    (:foreground gruvbox-dark4))
 
   ;; Built-in syntax
@@ -235,6 +235,50 @@
   (popup-menu-mouse-face                     (:foreground gruvbox-light0 :background gruvbox-faded_green))
   (popup-menu-selection-face                 (:foreground gruvbox-light0 :background gruvbox-faded_green))
   (popup-tip-face                            (:foreground gruvbox-light2 :background gruvbox-dark2))
+
+  ;; helm
+  (helm-M-x-key                              (:foreground gruvbox-neutral_orange ))
+  (helm-action                               (:foreground gruvbox-white :underline t))
+  (helm-bookmark-addressbook                 (:foreground gruvbox-neutral_red))
+  (helm-bookmark-directory                   (:foreground gruvbox-bright_purple))
+  (helm-bookmark-file                        (:foreground gruvbox-faded_blue))
+  (helm-bookmark-gnus                        (:foreground gruvbox-faded_purple))
+  (helm-bookmark-info                        (:foreground gruvbox-turquoise4))
+  (helm-bookmark-man                         (:foreground gruvbox-sienna))
+  (helm-bookmark-w3m                         (:foreground gruvbox-neutral_yellow))
+  (helm-buffer-directory                     (:foreground gruvbox-white :background gruvbox-bright_blue))
+  (helm-buffer-not-saved                     (:foreground gruvbox-faded_red))
+  (helm-buffer-process                       (:foreground gruvbox-burlywood4))
+  (helm-buffer-saved-out                     (:foreground gruvbox-bright_red))
+  (helm-buffer-size                          (:foreground gruvbox-bright_purple))
+  (helm-candidate-number                     (:foreground gruvbox-neutral_green))
+  (helm-ff-directory                         (:foreground gruvbox-neutral_purple))
+  (helm-ff-executable                        (:foreground gruvbox-turquoise4))
+  (helm-ff-file                              (:foreground gruvbox-sienna))
+  (helm-ff-invalid-symlink                   (:foreground gruvbox-white :background gruvbox-bright_red))
+  (helm-ff-prefix                            (:foreground gruvbox-black :background gruvbox-neutral_yellow))
+  (helm-ff-symlink                           (:foreground gruvbox-neutral_orange))
+  (helm-grep-cmd-line                        (:foreground gruvbox-neutral_green))
+  (helm-grep-file                            (:foreground gruvbox-faded_purple))
+  (helm-grep-finish                          (:foreground gruvbox-turquoise4))
+  (helm-grep-lineno                          (:foreground gruvbox-neutral_orange))
+  (helm-grep-match                           (:foreground gruvbox-neutral_yellow))
+  (helm-grep-running                         (:foreground gruvbox-neutral_red))
+  (helm-header                               (:foreground gruvbox-aquamarine4))
+  (helm-helper                               (:foreground gruvbox-aquamarine4))
+  (helm-history-deleted                      (:foreground gruvbox-black :background gruvbox-bright_red))
+  (helm-history-remote                       (:foreground gruvbox-faded_red))
+  (helm-lisp-completion-info                 (:foreground gruvbox-faded_orange))
+  (helm-lisp-show-completion                 (:foreground gruvbox-bright_red))
+  (helm-locate-finish                        (:foreground gruvbox-white :background gruvbox-aquamarine4))
+  (helm-match                                (:foreground gruvbox-neutral_orange))
+  (helm-moccur-buffer                        (:foreground gruvbox-bright_aqua :underline t))
+  (helm-prefarg                              (:foreground gruvbox-turquoise4))
+  (helm-selection                            (:foreground gruvbox-white :background gruvbox-dark2))
+  (helm-selection-line                       (:foreground gruvbox-white :background gruvbox-dark2))
+  (helm-separator                            (:foreground gruvbox-faded_red))
+  (helm-source-header                        (:foreground gruvbox-light2))
+  (helm-visible-mark                         (:foreground gruvbox-black :background gruvbox-light3))
 
   ;; company-mode
   (company-scrollbar-bg                      (:background gruvbox-dark1))
@@ -329,6 +373,14 @@
   (elfeed-search-last-update-face            (:inherit 'font-lock-comment-face))
   (elfeed-search-unread-count-face           (:inherit 'font-lock-comment-face))
   (elfeed-search-filter-face                 (:inherit 'font-lock-string-face))
+
+  ;; Smart-mode-line
+  (sml/global                                (:foreground gruvbox-burlywood4 :inverse-video nil))
+  (sml/modes                                 (:foreground gruvbox-bright_green))
+  (sml/filename                              (:foreground gruvbox-bright_red :weight 'bold))
+  (sml/prefix                                (:foreground gruvbox-light1))
+  (sml/read-only                             (:foreground gruvbox-neutral_blue))
+  (persp-selected-face                       (:foreground gruvbox-neutral_orange))
 
   ;;isearch
   (isearch                                   (:foreground gruvbox-black :background gruvbox-neutral_orange))
