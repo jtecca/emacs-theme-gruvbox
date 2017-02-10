@@ -144,7 +144,7 @@
   (secondary-selection                       (:background gruvbox-dark1))
   (minibuffer-prompt                         (:background gruvbox-bg :foreground gruvbox-neutral_green :bold t))
   (vertical-border                           (:foreground gruvbox-dark2))
-  (link                                      (:foreground gruvbox-faded_purple :underline t))
+  (link                                      (:foreground gruvbox-bright_purple :underline t))
   (shadow                                    (:foreground gruvbox-dark4))
 
   ;; Built-in syntax
@@ -331,7 +331,7 @@
   (org-column-title                          (:background gruvbox-dark0 :underline t :weight 'bold))
   (org-warning                               (:foreground gruvbox-neutral_red :weight 'bold :underline nil :bold t))
   (org-archived                              (:foreground gruvbox-light0 :weight 'bold))
-  (org-link                                  (:foreground gruvbox-faded_aqua :underline t))
+  (org-link                                  (:foreground gruvbox-bright_purple :underline t))
   (org-footnote                              (:foreground gruvbox-neutral_aqua :underline t))
   (org-ellipsis                              (:foreground gruvbox-light4 :underline t))
   (org-date                                  (:foreground gruvbox-neutral_blue :underline t))
@@ -375,12 +375,6 @@
   (elfeed-search-unread-count-face           (:inherit 'font-lock-comment-face))
   (elfeed-search-filter-face                 (:inherit 'font-lock-string-face))
 
-  ;; Smart-mode-line
-  (sml/global                                (:foreground gruvbox-burlywood4 :inverse-video nil))
-  (sml/modes                                 (:foreground gruvbox-bright_green))
-  (sml/filename                              (:foreground gruvbox-bright_red :weight 'bold))
-  (sml/prefix                                (:foreground gruvbox-light1))
-  (sml/read-only                             (:foreground gruvbox-neutral_blue))
   (persp-selected-face                       (:foreground gruvbox-neutral_orange))
 
   ;;isearch
@@ -437,11 +431,19 @@
   (diredp-rare-priv                          (:foreground gruvbox-dark4))
   (diredp-ignored-file-name                  (:foreground gruvbox-dark4))
 
-  (diredp-dir-priv                           (:foreground gruvbox-faded_blue  :background gruvbox-dark_blue))
-  (diredp-exec-priv                          (:foreground gruvbox-faded_blue  :background gruvbox-dark_blue))
-  (diredp-link-priv                          (:foreground gruvbox-faded_aqua  :background gruvbox-dark_aqua))
-  (diredp-read-priv                          (:foreground gruvbox-bright_red  :background gruvbox-dark_red))
-  (diredp-write-priv                         (:foreground gruvbox-bright_aqua :background gruvbox-dark_aqua)))
+  (diredp-dir-priv                           (:foreground gruvbox-faded_blue     :background gruvbox-dark_blue))
+  (diredp-exec-priv                          (:foreground gruvbox-faded_blue     :background gruvbox-dark_blue))
+  (diredp-link-priv                          (:foreground gruvbox-bright_purple  :background gruvbox-dark_aqua))
+  (diredp-read-priv                          (:foreground gruvbox-bright_red     :background gruvbox-dark_red))
+  (diredp-write-priv                         (:foreground gruvbox-bright_aqua    :background gruvbox-dark_aqua))
+
+  ;; speedbar
+  (speedbar-file-face                        (:foreground gruvbox-faded_aqua))
+  (speedbar-selected-face                    (:foreground gruvbox-bright_red))
+  (speedbar-directory-face                   (:foreground gruvbox-bright_yellow))
+  (speedbar-button-face                      (:foreground gruvbox-faded_green))
+  (speedbar-highlight-face                   (:foreground gruvbox-light0 :background gruvbox-faded_green))
+  (speedbar-tag-face                         (:foreground gruvbox-bright_purple)))
 
  (custom-theme-set-variables 'gruvbox
                              `(ansi-color-names-vector
