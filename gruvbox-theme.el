@@ -135,8 +135,8 @@
  ;; UI
  ((default                                   (:background gruvbox-bg :foreground gruvbox-light0))
   (cursor                                    (:background gruvbox-cursor))
-  (mode-line                                 (:background gruvbox-dark2 :foreground gruvbox-light2 :box nil))
-  (mode-line-inactive                        (:background gruvbox-dark1 :foreground gruvbox-light4 :box nil))
+  (mode-line                                 (:background gruvbox-dark2 :foreground gruvbox-light2 :box (:line-width 6 :color gruvbox-dark2)))
+  (mode-line-inactive                        (:background gruvbox-dark1 :foreground gruvbox-light4 :box (:line-width 6 :color gruvbox-dark1)))
   (fringe                                    (:background gruvbox-dark_fringe))
   (linum                                     (:background gruvbox-bg :foreground gruvbox-dark4))
   (hl-line                                   (:background gruvbox-dark1))
