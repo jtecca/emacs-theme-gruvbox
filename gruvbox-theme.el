@@ -354,6 +354,7 @@
   (org-upcoming-deadline                     (:inherit 'font-lock-keyword-face))
   (org-deadline-announce                     (:foreground gruvbox-faded_red))
   (org-time-grid                             (:foreground gruvbox-faded_orange))
+  (org-mode-line-clock                       (:foreground gruvbox-faded_purple))
 
   ;; org-habit
   (org-habit-clear-face                      (:background gruvbox-faded_blue))
@@ -444,6 +445,9 @@
   (speedbar-button-face                      (:foreground gruvbox-faded_green))
   (speedbar-highlight-face                   (:foreground gruvbox-light0 :background gruvbox-faded_green))
   (speedbar-tag-face                         (:foreground gruvbox-bright_purple)))
+
+ ;; eyebrowse
+ (eyebrowse-mode-line-active                 (:foreground gruvbox-bright_green))
 
  (custom-theme-set-variables 'gruvbox
                              `(ansi-color-names-vector
