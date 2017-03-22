@@ -447,7 +447,7 @@
   (speedbar-tag-face                         (:foreground gruvbox-bright_purple)))
 
  ;; eyebrowse
- (eyebrowse-mode-line-active                 (:foreground gruvbox-bright_green))
+ ;;(eyebrowse-mode-line-active                 (:foreground gruvbox-bright_green))
 
  (custom-theme-set-variables 'gruvbox
                              `(ansi-color-names-vector
